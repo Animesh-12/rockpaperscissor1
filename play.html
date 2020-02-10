@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!--  -->
+    </head>
+<body>
+ <nav class="navbar navbar-default navbar-inverse ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="color:goldenrod;">ROCK PAPER SCISSOR</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="rps.html">Home Page</a></li>
+        <!-- <li><a href="score.html">Score</a></li> -->
+       
+      </ul>
+    </div>
+  </nav>
+<div class="row">
+    <div class="col-lg-4">
+        <div class="thumbnail" style="border:5px solid black; background-color: grey;">
+         <img src="d1.jpg" alt="rock" width="100px" height="100px" />
+         <center>
+         <div class="thumbnail-caption" style="color:indianred; font-size: 40px; font-weight: bold;font-family: sans-serif;">ROCK</div>
+        <button class="btn btn-primary" id="1" value="0" onclick="new rock_paper_scissor().campare(1)">Click To Choose Rock</button>
+
+        </center>
+
+
+         </div>
+        </div>
+    
+
+    <div class="col-lg-4">
+        <div class="thumbnail" style="border:5px solid black; background-color: grey;">
+         <img src="d2.jpg" alt="rock" width="100px" height="100px"/>
+         <center>
+            <div class="thumbnail-caption" style="color:indianred; font-size: 40px; font-weight: bold;font-family: sans-serif;">PAPER</div>
+            <button class="btn btn-primary" id="2" value="1" onclick="new rock_paper_scissor().campare(2)">Click To Choose Paper</button>
+            </center>
+
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-4">
+        <div class="thumbnail" style="border:5px solid black; background-color: grey;">
+         <img src="d4.jpg" alt="rock" width="100px" height="100px"/>
+         <center>
+            <div class="thumbnail-caption" style="color:indianred; font-size: 40px; font-weight: bold;font-family: sans-serif;">PAPER</div>
+            <button class="btn btn-primary" id="3" value="2" onclick="new rock_paper_scissor().campare(3)">Click To Choose Scissor</button>
+            </center>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div>
+<div class="row">
+    <div class="col-lg-4">
+        <p  id="score" style="color:red;font-family: sans-serif;" >SCORE</p>
+    </div>
+</div>
+<script src="rpsci.js"></script>
+</body>
+</html>
